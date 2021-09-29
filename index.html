@@ -1,1 +1,57 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.7/semantic.min.css"><title>Price Check</title><link href="/static/css/main.9c9e2e78.css" rel="stylesheet"></head><body><div class="ui main-body text container"><div class="ui segment"><div class="ui center aligned container"><h2 class="ui header">Welcome to Price Check</h2><div class="ui inverted black segment"><div id="price"></div></div></div><div class="ui segment"><p>I made this as Github pages demo of:</p><ul><li>Static content</li><li>React apps</li><li>Awesomness</li></ul></div></div><div class="ui center aligned footer container"><p>Made with &hearts; by <a href="https://www.toptal.com/resume/amin-shah-gilani#contract-just-respected-software-architects">Amin Shah Gilani</a></p></div></div><script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/semantic-ui/2.2.7/semantic.min.js"></script><script type="text/javascript" src="/static/js/main.6f499e24.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.7/semantic.min.css">
+    <title>Price Check</title>
+    <link href="/static/css/main.9c9e2e78.css" rel="stylesheet">
+</head>
+<body>
+<div class="ui main-body text container">
+    type : <select id="typeId" name="cars">
+    <option value="1"> 1 - shop store view by store_id</option>
+    <option value="2"> 2 - trial brand view by store_id</option>
+    <option value="3"> 3 - open url</option>
+    <option value="4"> 4 -</option>
+    <option value="5"> 5 - refer a friend</option>
+    <option value="6"> 6 - super store view by store_id</option>
+    <option value="7"> 7 - move to shopfront if in trial feed</option>
+    <option value="8"> 8 - move to shopfront by id</option>
+    <option value="9"> 9 - add to cart by product id (trial) - GUEST</option>
+    <option value="10">10 - add to cart by product id and sku (shop) - GUEST</option>
+    <option value="11">11 - play video by url</option>
+    <option value="12">12 - product detail by product id and sku (shop)</option>
+    <option value="13">13 - product detail by product id (trial)</option>
+    <option value="14">14 - anchor brand by store_id</option>
+    <option value="15">15 - Trial collection</option>
+    <option value="16">16 - earn referral faq</option>
+    <option value="17">17 - redeem referral faq</option>
+    <option value="18">18 - earn page</option>
+    <option value="19">19 - redeem page</option>
+    <option value="21">21 - move to trial front</option>
+    <option value="22">22 - quiz - GUEST</option>
+    <option value="23">23 - cart - GUEST</option>
+    <option value="24">24 - Surprise me - GUEST</option>
+    <option value="25">25 -</option>
+</select><br>
+    First name: <input type="text" name="fname" id="txtfname"><br>
+    Last name: <input type="text" name="lname" id="txtlname"><br>
+    <button type="button" value="" id="btnOK" onclick=" getValues(); "> getName</button>
+    <div class="ui center aligned footer container"><p>Made with &hearts; by <a href="https://www.toptal.com/resume/amin-shah-gilani#contract-just-respected-software-architects">Vinay Rathod</a></p></div>
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.7/semantic.min.js"></script>
+<script type="text/javascript" src="/static/js/main.6f499e24.js"></script>
+<script>
+ function getValues() {
+    var fname = document.getElementById("txtfname").value
+    var lname = document.getElementById("txtlname").value;
+    var type = document.getElementById("typeId").value;
+    magiccard.onClick(type,fname,lname)
+ }
+
+</script>
+</body>
+</html>
